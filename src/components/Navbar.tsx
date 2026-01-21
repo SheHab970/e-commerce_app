@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SearshBar from "./SearshBar";
 import { Bell, Home, ShoppingCart } from "lucide-react";
+import ShoppingCartIcon from "./ShoppingCartIcon";
 
 const Navbar = () => {
     return(
@@ -27,9 +28,7 @@ const Navbar = () => {
                     <Link href="/">
                         <Bell className=" transform duration-300 hover:-translate-y-1 w-4 h-4 text-gray-600"/>
                     </Link>
-                    <Link href="/">
-                        <ShoppingCart className=" transform duration-300 hover:-translate-y-1 w-4 h-4 text-gray-600"/>
-                    </Link>
+                    <ShoppingCartIcon />
                     <Link href="/login" className="text-sm duration-200 hover:bg-gray-800 px-3 py-1.5 rounded-xl m-0 hover:text-amber-50">Sign in</Link>
                 </div>
             </nav>
