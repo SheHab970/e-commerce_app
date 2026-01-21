@@ -6,8 +6,7 @@ const ProductsPage = async({searchParams}: {searchParams: Promise<{category: str
     return (
         <>
             <div>
-                productsPage
-                <ProductList category={category} />
+                <ProductList category={category} params="products"/>
             </div>
         </>
     )

@@ -69,7 +69,7 @@ const Categories = () => {
 
     return(
         <div className="">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 bg-gray-100 p-2 rounded-lg mg-4 text-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 bg-gray-100 p-2 rounded-lg mg-4 text-sm mt-2">
                 {categories.map(category => (
                     <div className={`flex items-center justify-center gap-2 cursor-pointer px-2 py-1 rounded-md
                         ${category.slug === selectCategory ? 'bg-white' : 'text-gray-500'}
