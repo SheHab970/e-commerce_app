@@ -59,7 +59,7 @@ const ShippingForm = ({setShippingForm}:{setShippingForm:(data:ShippingFormInput
                 </label>
                 <input 
                     type="text" 
-                    id="" 
+                    id="phone" 
                     placeholder="+20 123456789" 
                     className="border-b border-gray-200 py-2 px-1 text-sm outline-none" 
                     {...register("phone")}
