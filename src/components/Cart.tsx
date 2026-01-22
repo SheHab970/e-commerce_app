@@ -146,7 +146,7 @@ const Cart = () => {
                 </div>
               ))
             ) : activeStep === 2 ? (
-              <ShippingForm />
+              <ShippingForm setShippingForm={setShippingForm}/>
             ) : activeStep === 3 && shippingForm ? (
               <PaymentForm />
             ) : (
@@ -194,7 +194,7 @@ const Cart = () => {
             {activeStep === 1 && (
               <button
                 className="w-full bg-gray-800 hover:bg-gray-900 transition-all duration-300 text-white rounded-md cursor-pointer flex items-center justify-center p-2 gap-1"
-                onClick={() => router.push(`/cart?step=2`)}
+                onClick={() => router.push("/cart?step=2", {scroll: false})}
               >
                 Continue
                 <ArrowRight className="w-3 h-3" />
