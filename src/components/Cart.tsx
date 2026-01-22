@@ -114,8 +114,8 @@ const Cart = () => {
                         </div>
                         <div className="flex items-center justify-between text-sm">
                             <p className="text-gray-500">Discount(10%)</p>
-                            <p className="font-medium">
-                                $10
+                            <p className="font-medium text-red-600">
+                                - $10
                             </p>
                         </div>
                         <div className="flex items-center justify-between text-sm">
@@ -132,10 +132,14 @@ const Cart = () => {
                             </p>
                         </div>
                     </div>
-                    <button className="w-full bg-gray-800 hover:bg-gray-900 transition-all duration-300 text-white rounded-md cursor-pointer flex items-center justify-center p-2 gap-1">
+                    {activeStep === 1 && 
+                    <button 
+                        className="w-full bg-gray-800 hover:bg-gray-900 transition-all duration-300 text-white rounded-md cursor-pointer flex items-center justify-center p-2 gap-1"
+                        onClick={() => router.push(`/cart?step=2`)}
+                        >
                         Continue 
                         <ArrowRight className="w-3 h-3"/>
-                    </button>
+                    </button>}
                 </div>
             </div>
         </div>
