@@ -84,7 +84,7 @@ const PaymentForm = () => {
                 )}
             </div>
             <div className="flex items-center gap-2 mt-4">
-                <Image src="/Klarna.png" alt="Klarna" width={50} height={25} className="rounded-md"/>
+                <Image src="/klarna.png" alt="Klarna" width={50} height={25} className="rounded-md"/>
                 <Image src="/cards.png" alt="Cards" width={50} height={25} className="rounded-md"/>
                 <Image src="/stripe.png" alt="Stripe" width={50} height={25} className="rounded-md"/>
             </div>
