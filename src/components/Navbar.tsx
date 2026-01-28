@@ -43,12 +43,16 @@ const Navbar = () => {
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
-                            <DropdownMenuItem>
-                                 <Link href="/login" className="w-full">Login</Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                 <Link href="/register" className="w-full">Sign In</Link>
-                            </DropdownMenuItem>
+                            <Link href="/login" className="w-full">
+                                <DropdownMenuItem>
+                                    Login
+                                </DropdownMenuItem>
+                            </Link>
+                            <Link href="/register" className="w-full cursor-pointer">
+                                <DropdownMenuItem>
+                                    Sign Up
+                                </DropdownMenuItem>
+                            </Link>
                         </DropdownMenuContent>
                     </DropdownMenu>
                     {/* <Link href="/login" className="text-sm duration-200 hover:bg-gray-800 px-3 py-1.5 rounded-xl m-0 hover:text-amber-50">Sign in</Link> */}
