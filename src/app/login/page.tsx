@@ -4,9 +4,9 @@ import Link from "next/link";
 const LoginPage = () => {
     return (
         <div className="flex items-center justify-center mt-16">
-            <div className="flex flex-col items-center gap-8 w-full lg:w-1/3 shadow-lg border-2 border-gray-100 p-8 rounded-lg">
+            <div className="flex flex-col items-center gap-8 w-full lg:w-5/12 animate-fade-down shadow-lg border-2 border-gray-100 p-8 rounded-lg">
                 {/* HEADER */}
-                <h1 className="text-gray-800 font-medium text-2xl py-2">
+                <h1 className="text-gray-800 font-medium text-2xl lg:text-3xl py-2">
                     Welcom Back
                 </h1>
                 {/* LOGIN FORM */}

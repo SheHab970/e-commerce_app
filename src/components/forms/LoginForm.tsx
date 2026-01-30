@@ -40,7 +40,7 @@ const LoginForm = () => {
                     type="text"
                     id="userName"
                     placeholder="John Deo"
-                    className="border-b border-gray-200 py-2 px-1 text-sm outline-none"
+                    className="border-b border-gray-200 py-2 px-1 text-sm outline-none focus:border-gray-400 transition-all duration-300"
                     {...register("username")}
                 />
                 {errors.username && (
@@ -53,12 +53,12 @@ const LoginForm = () => {
                 <label htmlFor="password" className="text-xs text-gray-500">
                     Password
                 </label>
-                <div className="flex items-center justify-between border-b border-gray-200">
+                <div className="flex items-center justify-between border-b border-gray-200  focus-within:border-gray-400 transition-all duration-300">
                     <input 
                         type={showPassword ? "text" : "password"}
                         id="password"
                         placeholder="********"
-                        className=" py-2 px-1 text-sm outline-none"
+                        className=" py-2 px-1 text-sm outline-none w-full"
                         {...register("password")}
                     />
                     <button
