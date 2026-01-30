@@ -1,3 +1,4 @@
+import ProductInteraction from "@/components/ProductInteraction";
 import { ProductsType, ProductType } from "@/types";
 import Image from "next/image";
 
@@ -163,6 +164,11 @@ const ProductPage = async ({ params, searchParams }:{params:Promise<{id: string}
                 <h1 className="text-2xl font-medium">{product?.name}</h1>
                 <p className="text-gray-500 ">{product.description}</p>
                 <h2 className="text-2xl font-semibold">${product?.price.toFixed(2)}</h2>
+                <ProductInteraction 
+                    product={product}
+                    selectedColor={selectedColor}
+                    selectedSize={selectedSize}
+                />
                 
                 {/* CARD INFO */}
                 <div className="flex items-center gap-2 mt-4">
